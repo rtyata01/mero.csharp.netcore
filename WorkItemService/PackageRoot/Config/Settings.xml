@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.NetCore.com/2011/01/fabric">
+    <Section Name="Environment">
+        <Parameter Name="EnvironmentName" Value="Local" />
+    </Section>
+
+    <Section Name="ServiceIdentity">
+        <Parameter Name="ServicePrincipalId" MustOverride="true" Value="" />
+        <Parameter Name="ServicePrincipalCertificateIdentifier" MustOverride="false" Value="" />
+        <Parameter Name="TenantId" MustOverride="false" Value="" />
+    </Section>
+
+    <Section Name="ServiceEndpoints">
+        <Parameter Name="WebApiDomainName" Value="localhost"/>
+        <Parameter Name="SslCertificateCommonName" Value="" MustOverride="true"/>
+    </Section>
+
+    <Section Name="Communication">
+        <Parameter Name="AuthenticationSubjectName" MustOverride="true" Value=""/>
+    </Section>
+
+    <Section Name="RetryPolicy">
+        <Parameter Name="RetryPolicyIncrementTime" MustOverride="true" Value="" />
+        <Parameter Name="WriteRetryPolicyIncrementTime" MustOverride="true" Value="" />
+        <Parameter Name="RetryPolicyNumberOfTries" MustOverride="true" Value="" />
+    </Section>
+
+    <Section Name="WorkItemService">
+        <Parameter Name="AzureWorkItemServiceClientId" MustOverride="true" Value="" />
+        <Parameter Name="AzureTenantId" MustOverride="true" Value="" />
+        <Parameter Name="AzureAuthority" MustOverride="true" Value="" />
+        <Parameter Name="CloudPublicApisClientId" MustOverride="true" Value="" />
+        <Parameter Name="CloudTenantId" MustOverride="true" Value="" />
+        <Parameter Name="CloudAuthority" MustOverride="true" Value="" />
+        <Parameter Name="CloudAudience" MustOverride="true" Value="" />
+    </Section>
+
+    <Section Name="AzureAppConfig">
+        <Parameter Name="AzureAppConfigEndpoint" MustOverride="true" Value=""/>
+        <Parameter Name="AzureAppConfigEnvironmentLabel" MustOverride="true" Value="" />
+    </Section>
+</Settings>
